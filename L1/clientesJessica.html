@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jéssica</title>
+</head>
+<body>
+    <script>
+
+
+        
+
+        let BHqnt = 23, BHfat = 2950;
+        let SPqnt = 12, SPfat = 3950;
+        let Sqnt = 11, Sfat = 1329;
+        let CGqnt = 10, CGfat = 2412;
+        let Cqnt = 8, Cfat = 626;
+        let quantidade = BHqnt + SPqnt + Sqnt + CGqnt + Cqnt;
+
+        function Escreve (quantidade){
+            document.write("Nas capitais de BH, SP, BA, MS e PR, Jéssica possui " + quantidade + " clientes.");
+        }
+
+        Escreve(quantidade);
+
+        
+
+        let fatBH = Math.round(BHfat / BHqnt);
+        let fatSP = Math.round(SPfat / SPqnt);
+        let fatS = Math.round(Sfat / Sqnt);
+        let fatCG = Math.round(CGfat / CGqnt);
+        let fatC = Math.round(Cfat / Cqnt);
+
+        document.write("Faturamento médio por cliente:\nBelo Horizonte: R$" + fatBH + "\nSão Paulo: R$" + fatSP + "\nSalvador: R$" + fatS + "\nCampo Grande: R$" +
+            fatCG + "\nCuritiba: R$" + fatC
+        );
+
+
+        
+    </script>
+</body>
+</html>
